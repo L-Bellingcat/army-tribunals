@@ -38,7 +38,7 @@ class LegalTextParser:
                  "Determine the date, format DDMMYYYY." \
                  "Determine the name of the applicant, removing military titles and role." \
                  "Return the data in the form of a python dictionary " \
-                 "{'civilian judge': <name>, 'military judge': <name>, 'date': <date>, 'applicant name': <applicant name>]."
+                 "{'civilian judge': <name>, 'military judge': <name>, 'date': <date>, 'applicant name': <applicant name>}."
         return self._query(prompt)
 
 
@@ -47,7 +47,7 @@ def main():
 
     # Select a random PDF file from inside the judgement_pdfs directory
     # pdf_path = random.choice(list(Path('judgement_pdfs').glob('**/*.pdf')))
-    pdf_path = Path('judgement_pdfs/lucknow/M.A. No. 82 & 95 of 2015 Emmual (Misc).pdf')
+    pdf_path = Path('judgement_pdfs/lucknow/O.A.(A) No.500 of 2017 (Vijai Misra(GCM).pdf')
 
     # # Extract text from the PDF
     # text = extract_text(pdf_path)[:1000]

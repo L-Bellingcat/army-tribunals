@@ -7,27 +7,6 @@ import pandas as pd
 import requests
 
 
-# def configure_proxies() -> requests.Session:
-#
-#     # IP address: 2.56.119.93
-#     # port: 5074
-#     # Username: ccsxnebc
-#     # Password: w8uapzu6f72z
-#
-#     # Construct URL for proxy server from data above
-#
-#
-#     proxy_servers = {
-#         'http': '197.234.13.10:4145',
-#         'https': '197.234.13.10:4145',
-#     }
-#
-#     s = requests.Session()
-#     s.proxies = proxy_servers
-#
-#     return s
-
-
 def scrape_pdfs(region: str):
     # session = configure_proxies()
 
