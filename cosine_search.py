@@ -48,8 +48,8 @@ class FindSimilar:
         return similarities.head(K)
 
 
-def load_data():
-    data = pd.read_csv('embeddings/chandigarh.csv')
+def load_chandigarh_df(path: str) -> DataFrame:
+    data = pd.read_csv(path)
 
     # Remove all rows that have NaN values
     data = data.dropna()
@@ -66,7 +66,7 @@ def main():
     # Create an instance of FindSimilar
 
     start = time.time()
-    find_similar = FindSimilar(load_data())
+    find_similar = FindSimilar(load_chandigarh_df('embeddings/chandigarh.csv'))
     end = time.time()
     print("Time taken to load data: ", end - start)
 
