@@ -14,8 +14,14 @@
 <nav class="navbar bg-body-tertiary" style="background-color: #e3f2fd;">
     <div class="container">
         <span class="navbar-brand mb-0 h1">Project Sentinel: Uncovering Systemic Issues in Armed Forces Tribunals</span>
+
+        <a href="https://github.com/L-Bellingcat/army-tribunals">
+            <img src="/static/github-logo.png" alt="GitHub logo" width="32">
+        </a>
+
     </div>
 </nav>
+
 
 <br>
 <br>
@@ -27,10 +33,8 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <form action="https://server-p7oiucccxq-uc.a.run.app/search" method="post" enctype="multipart/form-data">
+            <form action="/search" method="post" enctype="multipart/form-data">
                 <div class="input-group">
-                    <!--                    <input type="text" class="form-control" placeholder="Enter text..." aria-label="" name="plain_text">-->
-
                     <div>
                         <input class="form-control form-control-lg" id="formFileLg" type="file" name="pdf">
                     </div>
@@ -38,6 +42,67 @@
                 </div>
             </form>
         </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-12">
+            <h2>What is the Armed Forces Tribunal?</h2>
+            <p>
+                Established on August 8, 2009 by the <a href="https://aftdelhi.nic.in/act/AFT_Act_2007.pdf">Armed Forces
+                Tribunal Act</a>, the armed forces tribunal is a statutory body spread across 11 locations
+                or benches in India. The most active benches are <a
+                    href="https://www.aftdelhi.nic.in/index.php/site-links/judgement-by-case?start=0">Delhi</a>, <a
+                    href="https://www.aftdelhi.nic.in/index.php/rbs/chandigarh/chandigarh-judgement">Chandigarh</a>,
+                other
+                regions include <a href="https://aftlko.up.nic.in/other_judgments.htm">Lucknow</a>, <a
+                    href="https://aftkolkata.nic.in/">Kolkata</a>, <a href="https://aftjabalpur.in/jd.php">Jabalpur</a>.
+            </p>
+
+            <p>
+                An example <a
+                    href="https://aftlko.up.nic.in/Others/Judgment%20April%202023/OA126.2023.ManojKumar%20(D-pension).pdf">tribunal
+                judgement</a> from the Lucknow region.
+            </p>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <h2>Tool details</h2>
+            </div>
+            <div class="row">
+                <p>
+                    Sentinel is a tool to assist with navigating the Armed Forces Tribunal system in India.
+                    Currently, the tool implements a reverse document search, allowing users to upload a PDF of a
+                    tribunal case and find similar cases, displaying case details, a summary of the case, and a
+                    link the other judgements.
+                </p>
+                <p>
+                    It is our hope that by allowing users to find similar cases, we can bring to light systemic
+                    issues in the tribunal system, and help users navigate the system.
+                </p>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <h3>Limitations</h3>
+            </div>
+            <div class="row">
+                <ul>
+                    <li>Only Chandigarh region currently indexed</li>
+                    <li>Embeddings used for similarity search only use the first ~6000 words of the judgements</li>
+                    <li>Case summarization is currently very slow, delaying results delivery</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-6"></div>
     </div>
 </div>
 

@@ -32,6 +32,7 @@ app = FastAPI(
     #     {"url": "https://api.vanellus.tech"},
     # ]
 )
+# app.add_middleware(HTTPSRedirectMiddleware)
 
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -44,7 +45,7 @@ async def home(request: Request):
 
 
 # Search for documents similar to a provided PDF
-@app.post("/search/", response_class=HTMLResponse)
+@app.post("/search", response_class=HTMLResponse)
 async def create_file(request: Request, pdf: UploadFile):  # -> RedirectResponse:
     # Write to disk with a randomly generated filename
     filename = f"{uuid.uuid4()}.pdf"
