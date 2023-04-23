@@ -8,7 +8,7 @@ from embed import embed_text
 
 
 def create_index():
-    data = pd.read_csv('../embeddings/chandigarh.csv')
+    data = pd.read_csv('chandigarh.csv')
 
     # Remove all rows that have NaN values
     data = data.dropna()
@@ -50,6 +50,8 @@ class FindSimilar:
 
 def load_chandigarh_df(path: str) -> DataFrame:
     data = pd.read_csv(path)
+
+    print(data.head())
 
     # Remove all rows that have NaN values
     data = data.dropna()
