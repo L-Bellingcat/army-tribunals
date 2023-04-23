@@ -59,7 +59,7 @@ def main():
 
     # Select a random PDF file from inside the judgement_pdfs directory
     # pdf_path = random.choice(list(Path('judgement_pdfs').glob('**/*.pdf')))
-    pdf_path = Path('judgement_pdfs/kolkata/Court-58.pdf')
+    pdf_path = Path('../judgement_pdfs/kolkata/Court-58.pdf')
 
     # # Extract text from the PDF
     # text = extract_text(pdf_path)[:1000]

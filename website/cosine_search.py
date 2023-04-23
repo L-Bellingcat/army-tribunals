@@ -8,7 +8,7 @@ from embed import embed_text
 
 
 def create_index():
-    data = pd.read_csv('embeddings/chandigarh.csv')
+    data = pd.read_csv('../embeddings/chandigarh.csv')
 
     # Remove all rows that have NaN values
     data = data.dropna()
@@ -66,7 +66,7 @@ def main():
     # Create an instance of FindSimilar
 
     start = time.time()
-    find_similar = FindSimilar(load_chandigarh_df('embeddings/chandigarh.csv'))
+    find_similar = FindSimilar(load_chandigarh_df('../embeddings/chandigarh.csv'))
     end = time.time()
     print("Time taken to load data: ", end - start)
 

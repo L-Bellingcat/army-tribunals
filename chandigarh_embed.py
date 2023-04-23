@@ -3,7 +3,7 @@ import tiktoken
 from pdfminer.high_level import extract_text
 from tqdm import tqdm
 
-from embed import embed_text
+from website.embed import embed_text
 
 enc = tiktoken.get_encoding("cl100k_base")
 assert enc.decode(enc.encode("hello world")) == "hello world"
