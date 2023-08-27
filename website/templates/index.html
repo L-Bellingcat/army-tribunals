@@ -33,10 +33,27 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <form action="/search" method="post" enctype="multipart/form-data">
+            <form action="/similar_cases_file" method="post" enctype="multipart/form-data">
                 <div class="input-group">
                     <div>
-                        <input class="form-control form-control-lg" id="formFileLg" type="file" name="pdf">
+                        <input class="form-control form-control-lg" type="file" name="pdf">
+                    </div>
+                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <h2>Search tribunal cases with text:</h2>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <form action="/similar_cases_text" method="post" enctype="application/x-www-form-urlencoded">
+                <div class="input-group">
+                    <div>
+                        <input class="form-control form-control-lg" type="text" name="text">
                     </div>
                     <button class="btn btn-outline-secondary" type="submit">Search</button>
                 </div>
