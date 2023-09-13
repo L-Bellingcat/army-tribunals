@@ -5,7 +5,6 @@ from pathlib import Path
 import pandas as pd
 import requests
 
-
 def main():
     # session = configure_proxies()
 

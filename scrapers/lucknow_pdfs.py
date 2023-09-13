@@ -6,7 +6,6 @@ from pathlib import Path
 import pandas as pd
 import requests
 
-
 def scrape_pdfs(region: str):
     # session = configure_proxies()
 

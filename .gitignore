@@ -5,3 +5,5 @@ __pycache__
 embeddings
 similarities
 .space
+
+.DS_Store
